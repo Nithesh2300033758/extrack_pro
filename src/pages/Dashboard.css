@@ -1,0 +1,128 @@
+.page-container {
+  padding: 1.5rem;
+}
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin: 0 0 1.5rem 0;
+}
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--white);
+  margin: 0 0 1rem 0;
+}
+
+/* Grids */
+.dashboard-grid-top, .dashboard-grid-bottom {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid-top {
+    grid-template-columns: 2fr 1fr;
+  }
+  .dashboard-grid-bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Stats Cards */
+.dashboard-stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.stat-card {
+  background-color: var(--slate-800);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.stat-icon-wrapper {
+  padding: 0.75rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.stat-title {
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  margin: 0 0 0.25rem 0;
+}
+.stat-amount {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Recent Transactions */
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transaction-details {
+  display: flex;
+  align-items: center;
+}
+.transaction-icon-wrapper {
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+.transaction-description {
+  color: var(--white);
+  font-weight: 500;
+  margin: 0;
+}
+.transaction-date {
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  margin: 0;
+}
+.transaction-amount {
+  font-weight: 600;
+}
+
+/* Budget Overview */
+.budgets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--gray-300);
+  margin-bottom: 0.25rem;
+}
+.progress-bar-bg {
+  width: 100%;
+  background-color: var(--slate-700);
+  border-radius: 9999px;
+  height: 10px;
+}
+.progress-bar-fg {
+  background-color: var(--blue-600);
+  height: 10px;
+  border-radius: 9999px;
+}
+
+/* Color Helpers */
+.green-bg { background-color: var(--green-500-t); }
+.text-green { color: var(--green-400); }
+.red-bg { background-color: var(--red-500-t); }
+.text-red { color: var(--red-400); }
+.blue-bg { background-color: var(--blue-500-t); }
+.text-blue { color: var(--blue-400); }

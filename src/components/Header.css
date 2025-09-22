@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--slate-800);
+  border-bottom: 1px solid var(--slate-700);
+}
+
+/* New wrapper for the left side of the header */
+.header-left-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0; /* Important for flexbox to allow shrinking */
+}
+
+/* New styles for the toggle button */
+.sidebar-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--gray-400);
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.sidebar-toggle-btn:hover {
+  color: var(--white);
+  background-color: var(--slate-700);
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Give search a max-width */
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-400);
+}
+
+.search-input {
+  background-color: var(--slate-700);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 0.5rem 1rem 0.5rem 2.5rem; /* left padding for icon */
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 0 2px var(--blue-600);
+}
+
+.header-profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.notifications-btn {
+  color: var(--gray-400);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  transition: color 0.2s;
+}
+
+.notifications-btn:hover {
+  color: var(--white);
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #6366f1; /* Indigo-500 */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--white);
+  margin-right: 0.75rem;
+}
+
+.profile-name {
+  color: var(--white);
+  white-space: nowrap; /* Prevent name from wrapping */
+}
+
+.profile-chevron {
+  display: inline-block;
+  color: var(--gray-400);
+  margin-left: 4px;
+}

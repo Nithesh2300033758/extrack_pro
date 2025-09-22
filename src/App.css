@@ -1,0 +1,17 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Important for child scrolling */
+}
+
+.page-content-wrapper {
+  flex: 1;
+  overflow-y: auto; /* This makes the content area scrollable */
+  background-color: #1e293b55; /* slate-800 with opacity */
+}

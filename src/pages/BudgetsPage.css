@@ -1,0 +1,78 @@
+.budgets-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .budgets-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.new-budget-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.your-budgets-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .your-budgets-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.budget-card {
+    padding: 1.5rem;
+}
+
+.budget-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.budget-category {
+    color: var(--gray-400);
+    font-size: 0.875rem;
+    margin: 0 0 0.25rem 0;
+}
+
+.budget-card-amount {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.budget-total {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.more-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--gray-400);
+    transition: color 0.2s;
+}
+
+.more-btn:hover {
+    color: var(--white);
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.budget-remaining {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    margin: 0;
+}

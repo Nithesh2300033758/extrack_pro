@@ -1,0 +1,61 @@
+.sidebar {
+  width: 256px;
+  background-color: var(--slate-900);
+  color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+  /* Add transition for smooth collapse */
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+  flex-shrink: 0; /* Prevent sidebar from shrinking when window is small */
+}
+
+/* New styles for the collapsed state */
+.sidebar.collapsed {
+  width: 0;
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  /* Prevent text from wrapping during transition */
+  white-space: nowrap; 
+}
+
+.sidebar-nav {
+  flex-grow: 1;
+}
+
+.sidebar-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s;
+  margin-bottom: 0.5rem;
+  /* Prevent text from wrapping during transition */
+  white-space: nowrap;
+}
+
+.sidebar-nav-link:hover {
+  background-color: var(--slate-800);
+}
+
+.sidebar-nav-link.active {
+  background-color: var(--blue-600);
+  color: var(--white);
+}
+
+.sidebar-nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.75rem;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
